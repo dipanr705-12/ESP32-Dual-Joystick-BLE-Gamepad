@@ -51,13 +51,10 @@ A DIY Bluetooth gaming controller built with an ESP32 and two analog joystick mo
 ## 🚀 Getting Started
 
 ### Wokwi Simulation (Online)
-1. Go to [wokwi.com/projects/new/esp32](https://wokwi.com/projects/new/esp32)
-2. Paste `sketch.ino` code into the editor
-3. Switch to diagram tab → paste `diagram.json`
-4. Press `F1` → "Add Library" → search `ESP32-BLE-Gamepad`
-5. Hit ▶ Play — move joysticks and watch Serial Monitor
+👉 **[Open Live Wokwi Simulation](https://wokwi.com/projects/481663815455567873)**
 
-> **Note:** BLE doesn't connect in simulation, but joystick values print to Serial Monitor.
+1. Open the [Wokwi Simulation Project](https://wokwi.com/projects/481663815455567873)
+2. Hit ▶ Play — move joysticks and watch Serial Monitor
 
 ### Real Hardware (Arduino IDE)
 1. Install [Arduino IDE](https://www.arduino.cc/en/software)
