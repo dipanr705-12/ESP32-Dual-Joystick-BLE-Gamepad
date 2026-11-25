@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "DIY Gamepad Project",
+  "editor": "wokwi",
+  "parts": [
+    {"type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 100, "attrs": {}},
+    {"type": "wokwi-analog-joystick", "id": "joystick1", "top": -180, "left": -150, "attrs": {"label": "Left Stick"}},
+    {"type": "wokwi-analog-joystick", "id": "joystick2", "top": -180, "left": 350, "attrs": {"label": "Right Stick"}},
+    {"type": "wokwi-pushbutton", "id": "btnA", "top": 250, "left": -100, "attrs": {"color": "green", "label": "A"}},
+    {"type": "wokwi-pushbutton", "id": "btnB", "top": 250, "left": -20, "attrs": {"color": "red", "label": "B"}},
+    {"type": "wokwi-pushbutton", "id": "btnX", "top": 250, "left": 60, "attrs": {"color": "blue", "label": "X"}},
+    {"type": "wokwi-pushbutton", "id": "btnY", "top": 250, "left": 140, "attrs": {"color": "yellow", "label": "Y"}},
+    {"type": "wokwi-pushbutton", "id": "btnLB", "top": 320, "left": -60, "attrs": {"color": "white", "label": "LB"}},
+    {"type": "wokwi-pushbutton", "id": "btnRB", "top": 320, "left": 100, "attrs": {"color": "white", "label": "RB"}}
+  ],
+  "connections": [
+    ["joystick1:VRx", "esp:D34", "green", ["v10", "h20"]],
+    ["joystick1:VRy", "esp:D35", "blue", ["v20", "h30"]],
+    ["joystick1:SW", "esp:D32", "orange", ["v30", "h40"]],
+    ["joystick1:VCC", "esp:3V3", "red", ["v40", "h50"]],
+    ["joystick1:GND", "esp:GND.2", "black", ["v50", "h60"]],
+    ["joystick2:VRx", "esp:VP", "green", ["v10", "h-20"]],
+    ["joystick2:VRy", "esp:VN", "blue", ["v20", "h-30"]],
+    ["joystick2:SW", "esp:D33", "orange", ["v30", "h-40"]],
+    ["joystick2:VCC", "esp:3V3", "red", ["v40", "h-50"]],
+    ["joystick2:GND", "esp:GND.1", "black", ["v50", "h-60"]],
+    ["btnA:1.l", "esp:D25", "green", ["v10", "h-10"]],
+    ["btnA:2.l", "esp:GND.2", "black", ["v20", "h-20"]],
+    ["btnB:1.l", "esp:D26", "red", ["v10", "h-10"]],
+    ["btnB:2.l", "esp:GND.2", "black", ["v30", "h-20"]],
+    ["btnX:1.l", "esp:D27", "blue", ["v10", "h-10"]],
+    ["btnX:2.l", "esp:GND.2", "black", ["v40", "h-20"]],
+    ["btnY:1.l", "esp:D14", "yellow", ["v10", "h-10"]],
+    ["btnY:2.l", "esp:GND.2", "black", ["v50", "h-20"]],
+    ["btnLB:1.l", "esp:D12", "white", ["v10", "h-10"]],
+    ["btnLB:2.l", "esp:GND.2", "black", ["v60", "h-20"]],
+    ["btnRB:1.l", "esp:D13", "white", ["v10", "h-10"]],
+    ["btnRB:2.l", "esp:GND.2", "black", ["v70", "h-20"]]
+  ]
+}
