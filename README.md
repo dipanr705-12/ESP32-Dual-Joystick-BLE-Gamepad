@@ -2,7 +2,7 @@
 
 A DIY Bluetooth gaming controller built with an ESP32 and two analog joystick modules. Connects to your PC/laptop as a standard BLE gamepad for playing games.
 
-![Wokwi Simulation](wokwi-circuit.png)
+![Wokwi Simulation](wokwi-simulation.png)
 
 ## 🛠️ Hardware Required
 
@@ -74,7 +74,7 @@ A DIY Bluetooth gaming controller built with an ESP32 and two analog joystick mo
 |------|-------------|
 | `sketch.ino` | Main ESP32 firmware (BLE Gamepad + joystick reading) |
 | `diagram.json` | Wokwi circuit layout (paste in simulator) |
-| `wokwi-circuit.png` | Screenshot of the Wokwi circuit simulation |
+| `wokwi-simulation.png` | Screenshot of the Wokwi circuit simulation |
 
 ## 🎯 Features
 
